@@ -1,5 +1,15 @@
 # vandi_stm32
 
-Repository untuk project STM32 milik Vandi Cesario.
+Repository to host a rewrite project code STM32 for Vandi Cesario.
 
-### Panduan Installasi Tools
+### Table of Contents
+- Software/Tools Installation
+  - Alternative Package
+  - Compiler
+  - Windows Driver
+  - Flasher
+  - Libraries
+  - Editor
+
+### Software/Tools Installation
+
