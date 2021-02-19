@@ -39,7 +39,7 @@ There are many SCM available such as Git, CVS, Bazaar, etc.
 
 For now, I recommend to use Git as it will easier to use alongside with Github.
 You can download Git for windows [here](https://git-scm.com/download/win).
-Download **Windows setup** (not the portable package) then install it.
+Download *Windows setup* (not the portable package) then install it.
 
 Git SCM will be used as a tool to clone, update, and manage source-code
 
