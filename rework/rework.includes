@@ -1,0 +1,6 @@
+.
+ChibiOS_STM32/os/hal/lib/streams
+ChibiOS_STM32/os/hal/include
+ChibiOS_STM32/os/rt/include
+ChibiOS_STM32/os/various
+ChibiOS_STM32/os/hal/boards/ST_STM32F4_DISCOVERY

@@ -1,5 +1,5 @@
 /rework/.dep
 /rework/build
 /rework/ChibiOS_STM32
-/rework/qtcreator/*.creator.user
+/rework/*.creator.user
 
