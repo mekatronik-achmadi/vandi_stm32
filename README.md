@@ -23,6 +23,7 @@ Repository to host a rewrite project code STM32 for Vandi Cesario.
     - [Hercules](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#hercules-terminal)
     - [Serial Bluetooth](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#serial-bluetooth)
   - [Doxygen](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#doxygen)
+  - [Download Summary]()
 
 - Programming
   - Source Structure
@@ -55,6 +56,7 @@ It is previously used for STM32-BluePill training, but it should work for STM32 
 Source Code Manager or SCM is tool to manage source-tree and as content tracker.
 SCM is essential for programming, only psychopath who write code without it.
 There are many SCM available such as Git, CVS, Bazaar, etc.
+
 For now, I recommend to use Git as it will easier to use alongside with Github.
 You can download Git for windows [here](https://git-scm.com/download/win).
 Download **Windows setup** (not the portable package) then install it.
@@ -103,7 +105,7 @@ I'm not cover driver installation in Windows-8 or above as I dont have access to
 Here a list of download URL:
 - STLink. If you use STLink as program uploader, you can install driver from official ST Webpage (need a free registration).
 **Alternatively**, you can download my STLinkUtility package [here](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing) (it is also from ST but you can download here without registration).
-**Note**: You may need Visual C++ Redistributable 32bit (x86). You can get [here](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0).
+**Note**: To run STLinkUtility, you may need Visual C++ Redistributable 32bit (x86). You can get [here](https://aka.ms/vs/16/release/vc_redist.x86.exe).
 - USB/TTL. This driver should be installed if you use USB/TTL chip as serial communication.
 You can search download URL by your self, but here I provide some (this is tested only on Windows-7):
   - CH34x: [Download](https://drive.google.com/file/d/1-Q9LCqPtK7MlNTnRsnao-CeUexVp9CP1/view?usp=sharing)
@@ -131,6 +133,7 @@ Using Bootloader, you need USB/TTL converter connected to STM32's RX, TX, and GN
 You need to reset STM32 into Bootloader mode by putting BOOT0 to Low and BOOT1 to High.
 Then back to Run mode by putting BOOT1 to Low after flashing done.
 Install USB/TTL driver and Flashloader to use this methode.
+
 You can download Flashloader from web or get my package [here](https://drive.google.com/file/d/16X2A41JwBmAY4dVMn1nfmbGJTxy3zclD/view?usp=sharing).
 
 ![images](guides/images/stflash.png?raw=true)
@@ -183,12 +186,6 @@ Extract it to C:\ (C:\programmer-notepad\) then right-click _programmer-notepad.
 
 ![images](guides/images/pn.png?raw=true)
 
-#### Geany
-It's just like Programmer's Notepad, but without winAVR brand and has Linux/Gtk instead.
-You can get my package [here](https://drive.google.com/file/d/1nzUkKkn_Z1dPsbjiAxvCZ-j9I-xEpvdT/view?usp=sharing)
-
-![images](guides/images/geany.png?raw=true)
-
 ### Serial Terminal
 
 If you use some Serial Communication, you may need some Serial Terminal.
@@ -227,6 +224,28 @@ doxygen file_doxyconf.
 It will build documentation in HTML package directly from sources
 
 ![images](guides/images/doxy.png?raw=true)
+
+-------------------------------------------------------------------
+
+### Download Summary
+- Git SCM: [Download](https://git-scm.com/download/win)
+- Compiler gcc-arm-none-eabi:
+  - Official: [Download](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+  - Alternative: [Download](https://drive.google.com/file/d/1q520gOruQ-TH--J5tU-m1gB9pVVkQB8W/view?usp=sharing)
+- Drivers:
+  - STLink+Utility: [Download](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing)
+  - VCRedist x86: [Download](https://aka.ms/vs/16/release/vc_redist.x86.exe)
+  - USB/TTL CH34x: [Download](https://drive.google.com/file/d/1-Q9LCqPtK7MlNTnRsnao-CeUexVp9CP1/view?usp=sharing)
+  - USB/TTL PL230x: [Download](https://drive.google.com/file/d/1TPoFGtD0ngCYNH1h21dQrXWijMSp_XpZ/view?usp=sharing)
+  - USB/TTL FT232x: [Download](https://www.usb-drivers.org/wp-content/uploads/2014/12/CDM-2.08.28-WHQL-Certified1.zip)
+- Uploader:
+  - STLink+Utility: [Download](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing
+  - Flashloader: [Download](https://drive.google.com/file/d/16X2A41JwBmAY4dVMn1nfmbGJTxy3zclD/view?usp=sharing)
+- ChibiOS/RT Libraries: [Download](https://drive.google.com/file/d/11ivvhc-s3gQD2uzF0HDYm6e5w_w103FT/view?usp=sharing)
+- Editor Choice:
+  - QtCreator: [Download](https://download.qt.io/official_releases/qtcreator/4.14/4.14.0/qt-creator-opensource-windows-x86_64-4.14.0.exe)
+  - Programmer's Notepad: [Download](https://drive.google.com/file/d/1nmF6X_4iJKNP1QdEUqnjhlbvPfEOGUQz/view?usp=sharing)
+- Doxygen (Optional): [Download](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
 
 -------------------------------------------------------------------
 -------------------------------------------------------------------
