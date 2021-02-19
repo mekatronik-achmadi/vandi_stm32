@@ -84,7 +84,7 @@ STM32
 #### QtCreator
 
 The QtCreator project file is a *.creator.
-In this case, *rework/qtcreator/rework.creator* is the file.
+In this case, **rework/qtcreator/rework.creator** is the file.
 Just open it from _File_ -> _Open File or Project_ then navigate it to file *.creator.
 
 ![images](images/prjqt.png?raw=true)
@@ -92,6 +92,6 @@ Just open it from _File_ -> _Open File or Project_ then navigate it to file *.cr
 #### Programmer Notepad
 
 Programmer Notepad usually doesn't use project style.
-Just open the *Makefile*
+Just keep open the **Makefile** and you considered opening the project.
 
-![images](images/prjqt.png?raw=true)
+![images](images/prjpn.png?raw=true)
