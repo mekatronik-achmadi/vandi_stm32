@@ -104,8 +104,9 @@ As ST Driver is not included in Windows Installation by default.
 I'm not cover driver installation in Windows-8 or above as I dont have access to it.
 Here a list of download URL:
 - STLink. If you use STLink as program uploader, you can install driver from official ST Webpage (need a free registration).
+
 **Alternatively**, you can download my STLinkUtility package [here](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing) (it is also from ST but you can download here without registration).
-**Note**: To run STLinkUtility, you may need Visual C++ Redistributable 32bit (x86). You can get [here](https://aka.ms/vs/16/release/vc_redist.x86.exe).
+
 - USB/TTL. This driver should be installed if you use USB/TTL chip as serial communication.
 You can search download URL by your self, but here I provide some (this is tested only on Windows-7):
   - CH34x: [Download](https://drive.google.com/file/d/1-Q9LCqPtK7MlNTnRsnao-CeUexVp9CP1/view?usp=sharing)
@@ -124,6 +125,8 @@ There's two popular way to flashing chip, via SWD and UART Bootloader:
 
 Using SWD, you need ST-Link device (preferrably not Chinese clone) connected to STM32's SWDIO, SWCLK, and GND pin.
 Install STSW to use ST-Link, you can download from ST's Official Web or get my package [here](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing)
+
+**Note**: To run STLinkUtility, you may need Visual C++ Redistributable 32bit (x86). You can get [here](https://aka.ms/vs/16/release/vc_redist.x86.exe).
 
 ![images](guides/images/stlink.png?raw=true)
 
@@ -234,12 +237,13 @@ It will build documentation in HTML package directly from sources
   - Alternative: [Download](https://drive.google.com/file/d/1q520gOruQ-TH--J5tU-m1gB9pVVkQB8W/view?usp=sharing)
 - Drivers:
   - STLink+Utility: [Download](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing)
-  - VCRedist x86: [Download](https://aka.ms/vs/16/release/vc_redist.x86.exe)
   - USB/TTL CH34x: [Download](https://drive.google.com/file/d/1-Q9LCqPtK7MlNTnRsnao-CeUexVp9CP1/view?usp=sharing)
   - USB/TTL PL230x: [Download](https://drive.google.com/file/d/1TPoFGtD0ngCYNH1h21dQrXWijMSp_XpZ/view?usp=sharing)
   - USB/TTL FT232x: [Download](https://www.usb-drivers.org/wp-content/uploads/2014/12/CDM-2.08.28-WHQL-Certified1.zip)
+  - USB/TTL VCP: [Download](https://www.usb-drivers.org/wp-content/uploads/2014/12/CDM-2.08.28-WHQL-Certified1.zip)
 - Uploader:
   - STLink+Utility: [Download](https://drive.google.com/file/d/17PP_mZ2qHATJZAJOSbEJMLryBORNO2R2/view?usp=sharing)
+  - VCRedist x86: [Download](https://aka.ms/vs/16/release/vc_redist.x86.exe)
   - Flashloader: [Download](https://drive.google.com/file/d/16X2A41JwBmAY4dVMn1nfmbGJTxy3zclD/view?usp=sharing)
 - ChibiOS/RT Libraries: [Download](https://drive.google.com/file/d/11ivvhc-s3gQD2uzF0HDYm6e5w_w103FT/view?usp=sharing)
 - Editor Choice:
