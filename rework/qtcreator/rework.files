@@ -1,0 +1,7 @@
+../Makefile
+../chconf.h
+../halconf.h
+../main.c
+../mcuconf.h
+../ta_serial.c
+../ta_serial.h
