@@ -12,7 +12,7 @@
   - [QtCreator](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#qtcreator-1)
   - [Programmer Notepad](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#programmer-notepad-1)
   - [Direcly in CMD](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#command-line)
-[Binary Result](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#binary-result)
+- [Binary Result](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#binary-result)
 
 -------------------------------------------------------------------
 
