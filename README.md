@@ -18,7 +18,6 @@ Repository to host a rewrite project code STM32 for Vandi Cesario.
   - [Editor](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#editor)
     - [QtCreator](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#qtcreator)
     - [Programmer Notepad](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md/#programmers-notepad)
-    - [Geany](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md/#geany)
   - [Serial Terminal](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#serial-terminal)
     - [Hercules](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#hercules-terminal)
     - [Serial Bluetooth](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/README.md#serial-bluetooth)
