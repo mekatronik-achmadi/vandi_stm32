@@ -1,7 +1,6 @@
 # Software/Tools Installation Guide
 
 ## Table of Contents
-
 - [Alternative Package](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#alternative-package)
 - [Source Code Manager](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#source-code-manager)
 - [Compiler](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#compiler)
