@@ -29,6 +29,7 @@
 #define _HALCONF_H_
 
 #include "mcuconf.h"
+#include "ta_serial.h"
 
 /**
  * @brief   Enables the PAL subsystem.
@@ -160,7 +161,7 @@
  * @brief   Enables the USB subsystem.
  */
 #if !defined(HAL_USE_USB) || defined(__DOXYGEN__)
-#define HAL_USE_USB                 TRUE
+#define HAL_USE_USB                 FALSE
 #endif
 
 /*===========================================================================*/
@@ -280,7 +281,7 @@
  *          default configuration.
  */
 #if !defined(SERIAL_DEFAULT_BITRATE) || defined(__DOXYGEN__)
-#define SERIAL_DEFAULT_BITRATE      38400
+#define SERIAL_DEFAULT_BITRATE      SERIAL_BAUD
 #endif
 
 /**

@@ -16,14 +16,16 @@
 
 #include "ch.h"
 #include "hal.h"
-#include "test.h"
 
-/*
- * This is a periodic thread that does absolutely nothing except flashing
- * a LED.
+#include "ta_serial.h"
+
+static THD_WORKING_AREA(waRunLed, 128);
+#define ThdFunc_RunLED THD_FUNCTION
+/**
+ * @brief Thread for System Running Indicator
+ * @details Smallest Thread to check either system in Run or Freeze
  */
-static THD_WORKING_AREA(waThread1, 128);
-static THD_FUNCTION(Thread1, arg) {
+static ThdFunc_RunLED(thdRunLed, arg) {
 
   (void)arg;
   chRegSetThreadName("blinker");
@@ -51,25 +53,20 @@ int main(void) {
   chSysInit();
 
   /*
-   * Activates the serial driver 2 using the driver default configuration.
-   * PA2(TX) and PA3(RX) are routed to USART2.
+   * Initiate Peripherals
    */
-  sdStart(&SD2, NULL);
-  palSetPadMode(GPIOA, 2, PAL_MODE_ALTERNATE(7));
-  palSetPadMode(GPIOA, 3, PAL_MODE_ALTERNATE(7));
+  TA_SerialInit();
 
   /*
-   * Creates the example thread.
+   * Initiate blink LED thread
    */
-  chThdCreateStatic(waThread1, sizeof(waThread1), NORMALPRIO, Thread1, NULL);
+  chThdCreateStatic(waRunLed, sizeof(waRunLed), NORMALPRIO, thdRunLed, NULL);
 
-  /*
-   * Normal main() thread activity, in this demo it does nothing except
-   * sleeping in a loop and check the button state.
-   */
   while (true) {
-    if (palReadPad(GPIOA, GPIOA_BUTTON))
-      TestThread(&SD2);
-    chThdSleepMilliseconds(500);
+    /*
+     * Checking if Shell alive
+     */
+    TA_SerialLoop();
+    chThdSleepMilliseconds(100);
   }
 }
