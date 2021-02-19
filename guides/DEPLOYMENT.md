@@ -161,3 +161,5 @@ If there's no error code and the compilation was successful, you can find a dire
 
 In there, you can find file **rework.bin** and **rework.hex**. These is file format that commonly flashed to STM32.
 
+Flashing method will be covered in next guide
+
