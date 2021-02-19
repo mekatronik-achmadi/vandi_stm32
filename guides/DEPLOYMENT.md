@@ -20,7 +20,7 @@
 
 To get sources, you should use Git Clone method over just zip download.
 
-First, right click on empty space in Windows Explorer -> _Git GUI Here_ -> _Clone Existing Repository_
+First, right click on empty area in Windows Explorer -> _Git GUI Here_ -> _Clone Existing Repository_
 
 Then fill _Source Location_ with this repo URL and
 for _Target Directory_ you can choose wherever you like as long that directory still not created.
@@ -55,7 +55,7 @@ If no any commit conflict, the sources should be updated
 
 ### Source Structure.
 
-The main directory when the sources resides is _rework_ directory.
+The directory where the main sources resides is _rework_ directory.
 
 Before you can compile the sources in there, you need to put ChibiOS/RT library first by extract the downloaded package there.
 The sources tree should look like this:
