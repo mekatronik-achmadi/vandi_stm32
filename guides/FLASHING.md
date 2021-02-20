@@ -10,6 +10,7 @@
 - [Bootloader]
   - [Requirements]
   - [Pinout]
+  - [Chip Mode]
   - [Connect]
   - [Erasing]
   - [Writing]
@@ -103,3 +104,108 @@ After that, make sure you see "Verification...OK" on STLink Utility log.
 Now you can disconnect the chip using menu _Target_ -> _Disconnect_
 
 -------------------------------------------------------------------
+
+### Bootloader
+
+In every STM32 chip, there is a section of a bootloader embedded in it.
+This bootloader can used for program the chip using only standard serial communication, mainly UART and I2C protocol.
+This guide will explain how to use bootloader to program via UART.
+
+#### Requirements
+
+Using bootloader, you need these things:
+- USB/TTL-UART converter. You can use converter based on FT232RL, PL2303, or CH34x chip.
+For testing this guide, I use PL2303 like [this](https://www.aliexpress.com/item/32850863681.html) as it cheap.
+- STM32 Bootloader program. They are two kinds available:
+  - Open Source kind. For Linux/BSD, this is recommended. See yourself [here](https://sourceforge.net/projects/stm32flash/).
+  - Official kind. Recommended for Windows. See installation guide. This guide will focus in this kind.
+
+-------------------------------------------------------------------
+
+#### Pinout
+
+Most of programming bootloader on STM32 use UART1 as default channel.
+
+| PL2303 | STM32 | Notes |
+|:-------:|:-----:|:-----:|
+| VDD | VDD | 3v3 |
+| TX | PA10 | UART1 RX |
+| RX | PA9 | UART1 TX |
+| GND | GND | |
+
+-------------------------------------------------------------------
+
+#### Chip Mode
+
+Each after reset or re-power, STM32 will boot into different modes based on BOOT0 and BOOT1 state.
+
+| Modes | BOOT0 | BOOT1 |
+|:-----:|:-----:|:-----:|
+| Running | 0 | 0 |
+| Bootloader | 1 | 0 |
+
+The 0 value means 0v or GND and the 1 value means 3v3 or VDD.
+
+So, to change boot modes, just set STM32 BOOT pins according table above and then reset/re-power
+
+-------------------------------------------------------------------
+
+#### Connect
+
+**Warning**: As STM32 chip will be put under reset, check all other connected device which potentially behave uncontrolably.
+Devices like electric motors or it's drivers should turn it off first before put STM32 under reset.
+
+First, Open Windows _Device Manager_ to check on which number COM Port registered.
+
+![images](images/stboot0.png?raw=true)
+
+Now, open _Demonstrator GUI_ from Windows menu, then make sure the _Port Name_ is match.
+
+![images](images/stboot1.png?raw=true)
+
+Before click _Next_, make sure the STM32 chip **already** booted into bootloader.
+Otherwise, it will make this program freeze.
+
+After click _Next_, you will see message that chip is readable
+
+![images](images/stboot2.png?raw=true)
+
+Then just click _Next_ a couple time, until you this main page:
+
+![images](images/stboot3.png?raw=true)
+
+-------------------------------------------------------------------
+
+#### Erasing
+
+To perform Mass/Full Erase, choose _Erase_ and _All_, then click _Next_
+
+![images](images/stboot4.png?raw=true)
+
+**Warning**: if your next action is to write program, dont click _Back_.
+But Click _Close_ and start the connecting process from start (including resetting STM32 chip).
+
+-------------------------------------------------------------------
+
+#### Writing
+
+To perform writing, choose _Download to Devices_
+
+The to open compilation result file, click three dotted button right on file name bar.
+On file selection dialog, use either _hex Files_ or _bin Files_ as file format.
+
+For erase option, I recommend _Global Erase_
+
+Lastly, dont forget to check _Verify after download_
+
+![images](images/stboot5.png?raw=true)
+
+Now, you can click _Next_ and chip programming will started.
+
+![images](images/stboot6.png?raw=true)
+
+Make sure verification is success in the end.
+
+![images](images/stboot7.png?raw=true)
+
+Now you can _Close_ and disconnect the chip.
