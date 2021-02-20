@@ -1,12 +1,12 @@
 # Program Flashing Guide
 
 ## Table of Contents
-- [SWD]
-  - [Requirements]
-  - [Pinout]
-  - [Connect]
-  - [Erasing]
-  - [Writing]
+- [SWD](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#swd)
+  - [Requirements](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#requirements)
+  - [Pinout](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#pinout)
+  - [Connect](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#connect)
+  - [Erasing](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#erasing)
+  - [Writing](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#writing)
 - [Bootloader]
   - [Requirements]
   - [Pinout]
@@ -33,6 +33,8 @@ To perform SWD flashing, you need some of these things:
   - Open Source kind. For Linux/BSD, this is recommended. See yourself [here](https://github.com/stlink-org/stlink).
   - Official kind. Recommended for Windows. See installation guide. This guide will focus in this kind.
 
+-------------------------------------------------------------------
+
 #### Pinout
 
 | ST-Link | STM32 | Notes |
@@ -41,6 +43,8 @@ To perform SWD flashing, you need some of these things:
 | SWCLK | PA14 | Avoid using for GPIO |
 | GND | GND | |
 | SWDIO | PA13 | Avoid using for GPIO |
+
+-------------------------------------------------------------------
 
 #### Connect
 
@@ -63,17 +67,21 @@ Click _OK_ and ST-Link Utility will show the Flash Memory map contents.
 **Notes**: It is possible to connect STM32 without putting the chip under reset.
 But it will not give STLink full control of STM32.
 
+-------------------------------------------------------------------
+
 #### Erasing
 
-Erasing or especially Mass Erasing is way to make sure STM32 chip will not leave any left-over value in it's flash memory.
+Erasing or especially Mass/Full Erasing is way to make sure STM32 chip will not leave any left-over value in it's flash memory.
 With this, you can expect STM32 will work as intended.
 Futhermore, if you use STM32 Flash as EEPROM, this will reset value off all it's address.
 
 To erase chip, go to _Target_ -> _Erase Chip_, then click _OK_ on confirmation dialog.
 
-STLink Utility then will show all program memory section (0x8000000 and above) become it default value (0xFFFFFFFF).
+STLink Utility then will show all program memory section (0x8000000 and above) become their default value (0xFFFFFFFF).
 
 ![images](images/st-link2.png?raw=true)
+
+-------------------------------------------------------------------
 
 #### Writing
 
@@ -94,3 +102,4 @@ After that, make sure you see "Verification...OK" on STLink Utility log.
 
 Now you can disconnect the chip from _Target_ -> _Disconnect_
 
+-------------------------------------------------------------------
