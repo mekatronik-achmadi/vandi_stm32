@@ -7,13 +7,13 @@
   - [Connect](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#connect)
   - [Erasing](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#erasing)
   - [Writing](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#writing)
-- [Bootloader]
-  - [Requirements]
-  - [Pinout]
-  - [Chip Mode]
-  - [Connect]
-  - [Erasing]
-  - [Writing]
+- [Bootloader](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#bootloader)
+  - [Requirements](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#requirements-1)
+  - [Pinout](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#pinout-1)
+  - [Chip Mode](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#chip-mode)
+  - [Connect](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#connect-1)
+  - [Erasing](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#erasing-1)
+  - [Writing](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/FLASHING.md#writing-1)
 
 -------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ Devices like electric motors or it's drivers should turn it off first before put
 Open _STM32 ST-Link Utility_, then _Target_ -> _Settings_,
 
 From there, make sure:
-- _Port_ is set to _SWD_ 
+- _Port_ is set to _SWD_
 - _Mode_ is set to _Connect Under Reset_
 - _Reset Mode_ is set to _Hardware Reset_
 
@@ -107,7 +107,7 @@ Now you can disconnect the chip using menu _Target_ -> _Disconnect_
 
 ### Bootloader
 
-In every STM32 chip, there is a section of a bootloader embedded in it.
+In every STM32 chip, there is a section of memory where a bootloader embedded in it.
 This bootloader can used for program the chip using only standard serial communication, mainly UART and I2C protocol.
 This guide will explain how to use bootloader to program via UART.
 
@@ -178,7 +178,11 @@ Then just click _Next_ a couple time, until you this main page:
 
 #### Erasing
 
-To perform Mass/Full Erase, choose _Erase_ and _All_, then click _Next_
+To perform Mass/Full Erase, choose _Erase_ and _All_,
+
+![images](images/stboot3b.png?raw=true)
+
+Then click _Next_ and wait until you see this page.
 
 ![images](images/stboot4.png?raw=true)
 
@@ -208,4 +212,4 @@ Make sure verification is success in the end.
 
 ![images](images/stboot7.png?raw=true)
 
-Now you can _Close_ and disconnect the chip.
+Now you can _Close_ and change the chip STM32 to boot into Running mode.
