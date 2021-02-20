@@ -1,7 +1,6 @@
 # Program Deployment Guide
 
 ## Table of Contents
-
 - [Getting Sources](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#getting-sources).
 - [Updating Sources](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#updating-sources).
 - [Source Structure](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/DEPLOYMENT.md#source-structure).
@@ -42,12 +41,12 @@ Click _Save_ at the end.
 
 ![images](images/gitpull0.png?raw=true)
 
-Updating sources from Github using Git GUI consist two steps:
+Updating sources from Github using Git GUI consist three steps:
 - Fetch using _Remote_ -> _Fetch from_ -> _origin_
 - Wait for a while.
 - then Merge using _Merge_ -> _Local Merge_
 
-If no any commit conflict, the sources should be updated
+If no any commit conflict or untracked files, the sources should be updated
 
 ![images](images/gitpull1.png?raw=true)
 
@@ -117,7 +116,7 @@ Also to clean up generated files, _Build_ -> _Clean Project "rework"_.
 
 ![images](images/compileqt.png?raw=true)
 
-Note: Latest QtCreator seems doesn't really like Linux/Unix so it will give a lot warning about it.
+Note: Latest QtCreator seems doesn't really like Linux/Unix path in Windows, so it will give a lot warning about it.
 Just ignore them.
 
 #### Programmer Notepad
