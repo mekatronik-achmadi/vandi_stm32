@@ -48,13 +48,13 @@ To perform SWD flashing, you need some of these things:
 
 #### Connect
 
-**Warning**: As STM32 chip will be put under reset, check all other connected device which will behave uncontrolably.
+**Warning**: As STM32 chip will be put under reset, check all other connected device which potentially behave uncontrolably.
 Devices like electric motors or it's drivers should turn it off first before put STM32 under reset.
 
 Open _STM32 ST-Link Utility_, then _Target_ -> _Settings_,
 
 From there, make sure:
-- _Port_ is set to _SWD 
+- _Port_ is set to _SWD_ 
 - _Mode_ is set to _Connect Under Reset_
 - _Reset Mode_ is set to _Hardware Reset_
 
@@ -65,7 +65,7 @@ Click _OK_ and ST-Link Utility will show the Flash Memory map contents.
 ![images](images/st-link1.png?raw=true)
 
 **Notes**: It is possible to connect STM32 without putting the chip under reset.
-But it will not give STLink full control of STM32.
+But it will not give STLink full control of STM32 chip.
 
 -------------------------------------------------------------------
 
@@ -73,7 +73,7 @@ But it will not give STLink full control of STM32.
 
 Erasing or especially Mass/Full Erasing is way to make sure STM32 chip will not leave any left-over value in it's flash memory.
 With this, you can expect STM32 will work as intended.
-Futhermore, if you use STM32 Flash as EEPROM, this will reset value off all it's address.
+Futhermore, if you use STM32 Flash as EEPROM, this will reset value of all it's address.
 
 To erase chip, go to _Target_ -> _Erase Chip_, then click _OK_ on confirmation dialog.
 
@@ -100,6 +100,6 @@ After that, make sure you see "Verification...OK" on STLink Utility log.
 
 ![images](images/st-link5.png?raw=true)
 
-Now you can disconnect the chip from _Target_ -> _Disconnect_
+Now you can disconnect the chip using menu _Target_ -> _Disconnect_
 
 -------------------------------------------------------------------
