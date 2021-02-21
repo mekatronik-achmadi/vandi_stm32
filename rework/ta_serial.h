@@ -36,6 +36,11 @@
  */
 #define SERIAL_BAUD 9600
 
+/**
+ * @brief Set echo on/off for command/prompt
+ */
+#define SERIAL_ECHO FALSE
+
 /*
  * @brief Serial Shell Thread Working size
  */
