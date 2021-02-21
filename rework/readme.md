@@ -14,5 +14,6 @@ Currently done or implemented:
   - [x] Remove Unused
   - [ ] Default Pinout
   - [ ] Default Clock
-- [x] Communication
-  - [x] Serial UART
+- [ ] Communication
+  - [ ] Serial UART Shell
+    - [x] Command: Test
