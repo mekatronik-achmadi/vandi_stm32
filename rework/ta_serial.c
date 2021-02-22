@@ -19,6 +19,7 @@
  * @addtogroup Communication
  * @{
  */
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -46,11 +47,29 @@ static void cmd_test(BaseSequentialStream *chp, int argc, char *argv[]) {
 }
 
 /**
+ * @brief Send char command callback
+ * @details Enumerated and not called directly by any normal thread
+ */
+static void cmd_char(BaseSequentialStream *chp, int argc, char *argv[]) {
+    (void) argc;
+    (void) argv;
+
+    uint8_t val;
+
+    for (val = 0; val<10 ; val++) {
+    	chprintf(chp,"%2d,",val);
+    }
+    chprintf(chp,"OK\r\n");
+}
+
+
+/**
  * @brief Shell command and it's callback enumeration
  * @details Extending from internal shell's callback
  */
 static const ShellCommand commands[] = {
     {"test",cmd_test},
+    {"r",cmd_char},
     {NULL, NULL}
 };
 
