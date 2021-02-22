@@ -39,7 +39,7 @@ Currently done or implemented:
 - [ ] Demo Clean-Up
   - [x] Remove Unused
   - [ ] Default Pinout
-  - [ ] Default Clock
-- [ ] Communication
-  - [ ] Serial UART Shell
+  - [x] Default Clock
+- [x] Communication
+  - [x] Serial UART Shell
     - [x] Command: Test

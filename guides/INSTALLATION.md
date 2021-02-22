@@ -196,8 +196,14 @@ You don't need doxygen to build or write a STM32 program.
 But if you need to generate documentation from source using doxygen comment style, you may install this.
 This is just a brief mention, I will not going in depth for now.
 
-You can get doxygen installer [here](https://doxygen.nl/files/doxygen-1.9.1-setup.exe).
-After install you need to add it's /bin path (C:\Program Files\doxygen\bin\) to Window's system environment variables (like you did in compiler before).
+You can need install these things:
+- Doxygen installer [here](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
+- Graphviz [here](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download).
+- HHC (for CHM format) [here](https://www.helpandmanual.com/download/htmlhelp.exe)
+
+After install you need to add their binary paths ("C:\Program Files\doxygen\bin\"
+and "C:\Program Files (x86)\HTML Help Workshop" without quotes)
+to Window's system environment variables (like you did in compiler before).
 
 To build documentation, you can use command like:
 ~~~
@@ -229,5 +235,8 @@ It will build documentation in HTML package directly from sources
 - Editor Choice:
   - QtCreator: [Download](https://download.qt.io/official_releases/qtcreator/4.14/4.14.0/qt-creator-opensource-windows-x86_64-4.14.0.exe)
   - Programmer's Notepad: [Download](https://drive.google.com/file/d/1nmF6X_4iJKNP1QdEUqnjhlbvPfEOGUQz/view?usp=sharing)
-- Doxygen (Optional): [Download](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
+- Documentatio (Optional):
+  - Doxygen: [Download](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
+  - Graphviz: [Download](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download)
+  - HHC: [here](https://www.helpandmanual.com/download/htmlhelp.exe)
 
