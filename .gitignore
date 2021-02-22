@@ -1,5 +1,6 @@
 /rework/.dep
 /rework/build
+/rework/.clangd
 /rework/ChibiOS_STM32
 /rework/*.creator.user
 
