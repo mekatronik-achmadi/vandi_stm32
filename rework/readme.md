@@ -28,10 +28,6 @@ This Rework based on Demo RT-STM32F07-Discovery in ChibiOS/RT 3.0.6
 - PB7 (I2C1_SDA)
 - PB6 (I2C1_SCL)
 
-##### RCC
-- PH0.. (RCC_OSC_IN)
-- PH1.. (RCC_OSC_OUT)
-
 ### Special Config
 
 ### To Do

@@ -238,5 +238,5 @@ It will build documentation in HTML package directly from sources
 - Documentatio (Optional):
   - Doxygen: [Download](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
   - Graphviz: [Download](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download)
-  - HHC: [here](https://www.helpandmanual.com/download/htmlhelp.exe)
+  - HHC: [Download](https://www.helpandmanual.com/download/htmlhelp.exe)
 
