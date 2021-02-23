@@ -3,4 +3,5 @@
 /rework/.clangd
 /rework/ChibiOS_STM32
 /rework/*.creator.user
-
+*.sch-bak
+*-cache.lib

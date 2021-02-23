@@ -15,6 +15,7 @@
 - [Serial Terminal](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#serial-terminal)
   - [Hercules](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#hercules-terminal)
   - [Serial Bluetooth](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#serial-bluetooth)
+- [KiCAD](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#kicad)
 - [Doxygen](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#doxygen)
 - [Download Summary](https://github.com/mekatronik-achmadi/vandi_stm32/blob/main/guides/INSTALLATION.md#download-summary)
 
@@ -248,7 +249,8 @@ It will build documentation in HTML package directly from sources
 - Editor Choice:
   - QtCreator: [Download](https://download.qt.io/official_releases/qtcreator/4.14/4.14.0/qt-creator-opensource-windows-x86_64-4.14.0.exe)
   - Programmer's Notepad: [Download](https://drive.google.com/file/d/1nmF6X_4iJKNP1QdEUqnjhlbvPfEOGUQz/view?usp=sharing)
-- Documentatio (Optional):
+- KiCAD: [Download](https://kicad-downloads.s3.cern.ch/windows/stable/kicad-5.1.9_1-x86_64.exe)
+- Documentation (Optional):
   - Doxygen: [Download](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
   - Graphviz: [Download](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download)
 
