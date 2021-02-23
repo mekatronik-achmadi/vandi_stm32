@@ -199,9 +199,15 @@ always involved in (at least) reading electronic schematic.
 You can choose EAGLE CAD if you like, but I prefer KiCAD since it open-sources and has amazing 3D preview.
 Also it's very popular and additional libraries made by communities are very abundances.
 
-You can get KiCAD [here](https://kicad-downloads.s3.cern.ch/windows/stable/kicad-5.1.9_1-x86_64.exe) (almost 500MB)
+You can get KiCAD [here](https://kicad-downloads.s3.cern.ch/windows/stable/kicad-5.1.9_1-x86_64.exe)
+
+Note: Download size almost 1.2GB and Installation size almost 6GB.
 
 ![images](images/kicad.png?raw=true)
+
+The circuit 3D viewer is one impressif feature of KiCAD
+
+![images](images/kicad3d.png?raw=true)
 
 -------------------------------------------------------------------
 
@@ -215,8 +221,7 @@ You can need install these things:
 - Doxygen installer [here](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
 - Graphviz [here](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download).
 
-After install you need to add their binary paths ("C:\Program Files\doxygen\bin\"
-and "C:\Program Files (x86)\HTML Help Workshop" without quotes)
+After install you need to add their binary paths (C:\Program Files\doxygen\bin\)
 to Window's system environment variables (like you did in compiler before).
 
 To build documentation, you can use command like:
