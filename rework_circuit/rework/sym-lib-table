@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name STM32F4DISCOVERY)(type Legacy)(uri ${KIPRJMOD}/lib/STM32F4DISCOVERY/STM32F4DISCOVERY.lib)(options "")(descr ""))
+  (lib (name bt-hc-05)(type Legacy)(uri ${KIPRJMOD}/lib/HC05/bt-hc-05.lib)(options "")(descr ""))
+)

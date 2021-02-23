@@ -190,6 +190,20 @@ This is avaiable at Play Store under name "Kai Morich Bluetooth Terminal"
 
 -------------------------------------------------------------------
 
+### KiCAD
+
+This is not mandatory, but very recommended to use it since professional electronic development
+always involved in (at least) reading electronic schematic.
+
+You can choose EAGLE CAD if you like, but I prefer KiCAD since it open-sources and has amazing 3D preview.
+Also it's very popular and additional libraries made by communities are very abundances.
+
+You can get KiCAD [here](https://kicad-downloads.s3.cern.ch/windows/stable/kicad-5.1.9_1-x86_64.exe) (almost 500MB)
+
+![images](images/kicad.png?raw=true)
+
+-------------------------------------------------------------------
+
 ### Doxygen
 This is **Optional**.
 You don't need doxygen to build or write a STM32 program.
@@ -199,7 +213,6 @@ This is just a brief mention, I will not going in depth for now.
 You can need install these things:
 - Doxygen installer [here](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
 - Graphviz [here](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download).
-- HHC (for CHM format) [here](https://www.helpandmanual.com/download/htmlhelp.exe)
 
 After install you need to add their binary paths ("C:\Program Files\doxygen\bin\"
 and "C:\Program Files (x86)\HTML Help Workshop" without quotes)
@@ -238,5 +251,4 @@ It will build documentation in HTML package directly from sources
 - Documentatio (Optional):
   - Doxygen: [Download](https://doxygen.nl/files/doxygen-1.9.1-setup.exe)
   - Graphviz: [Download](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download)
-  - HHC: [Download](https://www.helpandmanual.com/download/htmlhelp.exe)
 
